@@ -8,9 +8,14 @@ header {
     width: 100%;
     height: auto;
     position: fixed;
+    /* display: flex;
+    justify-content: space-between; */
+    /* justify-content: space-around; */
+}
+
+.qq {
     display: flex;
     justify-content: space-between;
-    /* justify-content: space-around; */
 }
 
 .container {
@@ -26,8 +31,6 @@ header .logo {
 
 header ul {
     list-style-type: none;
-    display: block;
-    justify-content: space-around;
     border: solid red;
     margin: 10px;
     padding: 20px;
@@ -48,6 +51,8 @@ header a {
 .Btn {
     padding: 25px;
     margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 button {
@@ -60,6 +65,10 @@ button {
     cursor: pointer;
 }
 
+
+
+
+
 .xBtn {
 
     cursor: pointer;
@@ -67,6 +76,11 @@ button {
 
 .welcome {
     color: #afa17e;
+    font-size: 18px;
+    border: solid pink;
+    justify-content: center;
+    align-items: center;
+
 }
 
 
