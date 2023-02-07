@@ -1,69 +1,84 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 header {
-    background-color: black;
     width: 100%;
-    height: auto;
-    position: fixed;
-    /* display: flex;
-    justify-content: space-between; */
-    /* justify-content: space-around; */
-}
-
-.qq {
+    height: 5rem;
+    background-color: black;
     display: flex;
     justify-content: space-between;
+
+
+
+
+    position: absolute;
+    top: 0px;
 }
 
-.container {
-    display: flex;
-}
-
-header .logo {
-    margin: 10px;
-    border: solid saddlebrown;
-    cursor: pointer;
-    margin-left: 40px;
-}
-
-header ul {
-    list-style-type: none;
+.leftContent {
+    width: 40rem;
     border: solid red;
-    margin: 10px;
-    padding: 20px;
-    margin-left: 20px;
-
+    display: flex;
+    justify-content: space-around;
 }
 
-header li {
-    display: inline-block;
-    margin-right: 10px;
+.leftContent .logo {
+    cursor: pointer;
+    border: solid saddlebrown;
+    height: 100%;
 }
 
-header a {
+.leftContent ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid pink;
+    width: 25rem;
+}
+
+.leftContent a {
     color: #afa17e;
     text-decoration: none;
 }
 
-.Btn {
-    padding: 25px;
-    margin-right: 40px;
+
+
+.rightContent {
+    border: solid greenyellow;
+    width: 22rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.rightContent .welcome {
+    color: #afa17e;
+    font-size: 17px;
+    border: solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
-    border: solid blue;
-    padding: 5px 20px;
+    /* padding: 5px 20px; */
+    padding: 10px 10px 10px;
     border-radius: 20px;
     background-color: #afa17e;
     color: black;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
 }
+
+
+
+
+
+
 
 
 
@@ -74,35 +89,10 @@ button {
     cursor: pointer;
 }
 
-.welcome {
-    color: #afa17e;
-    font-size: 18px;
-    border: solid pink;
-    justify-content: center;
-    align-items: center;
-
-}
 
 
 
 
-
-
-.bg-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* position: relative; */
-}
-
-.bg-image-text {
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-}
 
 .form {
     background-color: beige;
@@ -118,4 +108,33 @@ button {
     color: #afa17e;
     left: 500px;
     top: 250px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100vh;
+    /* object-fit: cover; */
+    /* position: absolute; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-image-text {
+    /* align-items: center;
+    justify-content: center; */
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    text-align: center;
+}
+
+.bigText {
+    font-size: 50px;
 }

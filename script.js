@@ -57,9 +57,9 @@ function checkCode(){
          return
         }
     }
-        if(!search){
-            alert("Användarnamn finns inte i vårt system. Var god försök igen.");
-        }
+    if(!search){
+        alert("Användarnamn finns inte i vårt system. Var god försök igen.");
+    }
 }
 
 //function for seccessful login
