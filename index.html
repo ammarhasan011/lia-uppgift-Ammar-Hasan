@@ -8,6 +8,9 @@
     <title>Ammar-LIA</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <header>
@@ -22,7 +25,7 @@
         </ul>
     </div>
     <div class="rightContent">
-        <h2 class="welcome">hej</h2>
+        <h2 class="welcome"></h2>
         <button class="popupBtn">LOGGA IN</button>
         <button class="logoutBtn">LOGGA UT</button>
     </div>
@@ -30,25 +33,36 @@
 </header>
 
 <body>
-    <img class="bg-image" src="./assest/bg-image.jpg" alt="">
+    <div class="background">
+
+    </div>
+
+    <!-- <img class="bg-image" src="./assest/bg-image.jpg" alt=""> -->
 
     <div class="bg-image-text">
-        <div>
+        <div class="textOne">
             <p>Ett nytt sätt att upptäcka</p>
         </div>
-        <div class="bigText">
+        <div class="textTwo">
             <p>Silkeslena produkter med <br> glansiga detaljer</p>
         </div>
     </div>
 
     <div class="form">
-        <div class="formText">
+        <div>
             <img class="xBtn" src="./assest/close-symbol.svg" alt="">
+        </div>
+        <div>
             <h1>Logga in</h1>
             <h2>Använd ditt namn för att logga in</h2>
-            <input class="username" type="text" placeholder="Namn">
         </div>
-        <button class="loginBtn">LOGGA IN</button>
+        <div>
+            <input class="username" type="text" placeholder="Namn">
+            <button class="loginBtn">LOGGA IN</button>
+        </div>
+        <div>
+            <h3 class="miniText">Genom att logga in godkänner du <span>våra villkor</span></h3>
+        </div>
     </div>
 
 

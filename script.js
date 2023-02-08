@@ -46,10 +46,10 @@ function cancelForm(){
 }
 
 function checkCode(){
+    let search= false;
     for (let users of userArray){
         console.log(users.username);
         console.log(username.value);
-        let search= false;
      if (users.username == username.value) {
         search=true;
          localStorage.setItem("userName", username.value);
@@ -81,5 +81,5 @@ function logOut(){
     form.style.display="none";
     logoutBtn.style.display = "none";
     popupBtn.style.display="block";
-    h2welcome.style.display = "none";
+    // h2welcome.style.display = "block";
 }
