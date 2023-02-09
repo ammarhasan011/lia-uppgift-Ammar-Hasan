@@ -6,11 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ammar-LIA</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Benne&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <header>
@@ -18,14 +23,14 @@
     <div class="leftContent">
         <img class="logo" src="./assest/test-logga.svg" alt="">
         <ul>
-
             <li><a href="#">PRODUKTER</a></li>
             <li><a href="#">OM OSS</a></li>
             <li><a href="#">BESTÄLLNING</a></li>
         </ul>
     </div>
     <div class="rightContent">
-        <h2 class="welcome"></h2>
+        <h2 class="firstMessage">DU ÄR INLOGGAD SOM<span class="loggingIn"></span></h2>
+        <h2 class="secondMessage">VÄLKOMMEN TILLBAKA<span class="loggedIn"></span></h2>
         <button class="popupBtn">LOGGA IN</button>
         <button class="logoutBtn">LOGGA UT</button>
     </div>
@@ -33,37 +38,36 @@
 </header>
 
 <body>
-    <div class="background">
+    <div class="img"></div>
 
-    </div>
 
-    <!-- <img class="bg-image" src="./assest/bg-image.jpg" alt=""> -->
-
-    <div class="bg-image-text">
+    <div class="bgimagetext">
         <div class="textOne">
-            <p>Ett nytt sätt att upptäcka</p>
+            <p>ETT NYTT SÄTT ATT UPPTÄCKA</p>
         </div>
         <div class="textTwo">
             <p>Silkeslena produkter med <br> glansiga detaljer</p>
         </div>
     </div>
-
-    <div class="form">
-        <div>
-            <img class="xBtn" src="./assest/close-symbol.svg" alt="">
-        </div>
-        <div>
-            <h1>Logga in</h1>
-            <h2>Använd ditt namn för att logga in</h2>
-        </div>
-        <div>
-            <input class="username" type="text" placeholder="Namn">
-            <button class="loginBtn">LOGGA IN</button>
-        </div>
-        <div>
-            <h3 class="miniText">Genom att logga in godkänner du <span>våra villkor</span></h3>
+    <div class="Form">
+        <div class="form">
+            <div class="xBtn">
+                <img src="./assest/close-symbol.svg" alt="">
+            </div>
+            <div class="hText">
+                <h1>Logga in</h1>
+                <h2>Använd ditt namn för att logga in</h2>
+            </div>
+            <div class="loginform">
+                <input class="username" type="text" placeholder="Namn">
+                <button class="loginBtn">Logga in</button>
+            </div>
+            <div class="loginh">
+                <h3 class="miniText">Genom att logga in godkänner du <span>våra villkor</span></h3>
+            </div>
         </div>
     </div>
+
 
 
 </body>
