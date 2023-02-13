@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 header {
     width: 100%;
     height: 5rem;
@@ -46,8 +45,38 @@ header {
     color: #afa17e;
     text-decoration: none;
     font-size: 18px;
+    /* letter-spacing: 1px; */
+    position: relative;
+}
+
+a:hover {
+    /* color: #c3a355; */
+    color: #ffffffd5;
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -1px;
+    left: 0;
+    margin-top: 4px;
+    background-color: rgb(255, 215, 0);
+    ;
+    transition: 0.5s ease all;
+}
+
+a:hover:before {
+    width: 100%;
 
 }
+
+
+
 
 
 
@@ -84,12 +113,18 @@ header {
     text-decoration: none;
     margin-left: 5px;
     font-size: 12px;
+    text-transform: uppercase;
 }
 
 .loggedIn {
     text-decoration: none;
     margin-left: 5px;
     font-size: 12px;
+    text-transform: uppercase;
+}
+
+span {
+    font-weight: bold;
 }
 
 .rightContent button {
@@ -155,28 +190,6 @@ body {
     /* border: solid red; */
 }
 
-/* .Form { */
-/* border: solid red; */
-/* position: absolute; */
-/* justify-content: space-around; */
-/* background-color: rgba(128, 128, 128, 0.478); */
-/* display: flex;
-    background-color: transparent;
-    */
-/* filter: blur(100px);
-    -webkit-filter: blur(2px);
-    width: 100px;
-    z-index: 3;
-    height: 100px;
-    top: 0;
-    filter: blur(4px);
-    -o-filter: blur(4px);
-    -ms-filter: blur(4px);
-    -moz-filter: blur(4px);
-    -webkit-filter: blur(4px); */
-
-/* } */
-
 .blur {
     max-width: 30rem;
 }
@@ -195,7 +208,6 @@ body {
     justify-content: space-around;
     /* margin: 20px;
     padding: 20px; */
-    /* */
     /*   text-align: center;
     justify-content: center; */
     color: black;
@@ -229,10 +241,9 @@ body {
     margin: 0px 0px 10px 5px;
 }
 
-.loginform {
-    /* border: solid purple; */
-    /* padding: 20px 0; */
-}
+/* .loginform {
+    border: solid purple;
+} */
 
 .form h1 {
     font-size: 22px;
@@ -273,17 +284,13 @@ body {
 
 }
 
-.loginh {
+.termsText {
     /* border: solid red; */
     padding: 10px;
-}
-
-.miniText {
     font-size: 9px;
     color: #959598;
-    /* border: solid red; */
 }
 
-span {
+.termsText span {
     border-bottom: 1px solid #959598;
 }

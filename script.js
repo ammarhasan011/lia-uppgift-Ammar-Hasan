@@ -8,7 +8,7 @@ const firstMessage = document.querySelector(".firstMessage");
 const secondMessage = document.querySelector(".secondMessage");
 const bgimagetext = document.querySelector(".bgimagetext");
 
-
+// blur around login form
 popupBtn.addEventListener("click", () => {
     blur.showModal();
     console.log("öppna")
@@ -42,10 +42,10 @@ let userArray =[
         username: "Ammar",
     },
     {
-        username: "ROBERT"
+        username: "Robert"
     },
     {
-        username: "BAMSE",
+        username: "Bamse",
     }
 ]
 
@@ -82,7 +82,7 @@ function checkCode(){
         }
     }
     if(!search){
-        alert("Användarnamn finns inte i vårt system. Var god försök igen.");
+        alert("Användarnamn finns inte i systemet. Var god testa med Ammar, Robert eller Bamse.");
     }
 }
 
