@@ -1,3 +1,4 @@
+const blur = document.querySelector(".blur");
 const popupBtn= document.querySelector(".popupBtn");
 const loginBtn= document.querySelector(".loginBtn");
 const form = document.querySelector(".form");
@@ -7,6 +8,19 @@ const firstMessage = document.querySelector(".firstMessage");
 const secondMessage = document.querySelector(".secondMessage");
 const bgimagetext = document.querySelector(".bgimagetext");
 
+
+popupBtn.addEventListener("click", () => {
+    blur.showModal();
+    console.log("öppna")
+  });
+xBtn.addEventListener("click", () => {
+    blur.close();
+    console.log("stäng")
+});
+loginBtn.addEventListener("click", () => {
+    blur.close();
+    console.log("stäng")
+});
 
 let username =document.querySelector(".username");
 
@@ -28,7 +42,10 @@ let userArray =[
         username: "Ammar",
     },
     {
-        username: "Robert"
+        username: "ROBERT"
+    },
+    {
+        username: "BAMSE",
     }
 ]
 
@@ -72,7 +89,7 @@ function checkCode(){
 //function for seccessful login
 function renderSeccessful(){
     let userkey = localStorage.getItem("userName");
-    // let userkey = localStorage.getItem("userName", username.value);
+
     console.log(userkey);
          console.log(username.value);
     if (username.value != userkey){
