@@ -157,24 +157,26 @@ body {
     justify-content: space-around;
     /* background-color: rgba(128, 128, 128, 0.478); */
     /* display: flex;
-    background-color: transparent; */
+    background-color: transparent;
+    */
     /* filter: blur(100px);
-    -webkit-filter: blur(2px); */
-    /* width: 100px;
+    -webkit-filter: blur(2px);
+     width: 100px;
     z-index: 3;
     height: 100px;
-    top: 0; */
-    /* filter: blur(4px);
+    top: 0;
+     filter: blur(4px);
     -o-filter: blur(4px);
     -ms-filter: blur(4px);
     -moz-filter: blur(4px);
     -webkit-filter: blur(4px); */
+
 }
 
 .form {
     background-color: #e4e4ee;
-    width: 400px;
-    height: 320px;
+    width: 390px;
+    height: 282px;
     /* position: absolute; */
     display: flex;
     justify-content: space-around;
@@ -196,12 +198,10 @@ body {
 
 .xBtn {
     cursor: pointer;
-    top: 1px;
-    right: 1px;
     border: solid green;
-    /* position: absolute; */
     padding: 5px;
     width: 10%;
+    margin-left: auto;
 }
 
 .hText {
@@ -222,11 +222,13 @@ body {
 .form h1 {
     font-size: 30px;
     display: flex;
+    font-weight: 400;
 }
 
 .form h2 {
     font-size: 20px;
     display: flex;
+    font-weight: 300;
 }
 
 .username {
@@ -259,6 +261,7 @@ body {
 .miniText {
     font-size: 11px;
     color: #959598;
+    /* border: solid red; */
 }
 
 span {

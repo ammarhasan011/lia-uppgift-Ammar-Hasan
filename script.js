@@ -60,7 +60,6 @@ function checkCode(){
         // console.log(username.value);
      if (users.username == username.value) {
         search=true;
-         localStorage.setItem("userName", username.value);
          renderSeccessful();
          return
         }
@@ -74,18 +73,22 @@ function checkCode(){
 function renderSeccessful(){
     let userkey = localStorage.getItem("userName");
     // let userkey = localStorage.getItem("userName", username.value);
-    
-    if (!username.value == userkey){
+    console.log(userkey);
+         console.log(username.value);
+    if (username.value != userkey){
           //DU ÄR INLOGGAD SOM
         let loggingIn = document.querySelector(".loggingIn");
-        loggingIn.innerText = userkey;
-        secondMessage.style.display = "block";
-    } else {
-         //Välkommen tillbaka
-        let loggedIn = document.querySelector(".loggedIn");
-        loggedIn.innerText = userkey;
+        loggingIn.innerText = username.value;
         firstMessage.style.display = "block";
+        secondMessage.style.display = "none";
+    } else {
+        //Välkommen tillbaka
+        let loggedIn = document.querySelector(".loggedIn");
+        loggedIn.innerText = username.value;
+        secondMessage.style.display = "block";
+        firstMessage.style.display = "none";
     }
+    localStorage.setItem("userName", username.value);
     form.style.display = "none";
     popupBtn.style.display="none";
     logoutBtn.style.display="block";
