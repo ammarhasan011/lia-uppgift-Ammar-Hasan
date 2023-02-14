@@ -1,5 +1,4 @@
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -52,7 +51,7 @@ header {
 a:hover {
     /* color: #c3a355; */
     color: #ffffffd5;
-    font-size: 20px;
+    /* font-size: 20px; */
     line-height: 1.5;
     text-transform: uppercase;
 }
@@ -149,11 +148,11 @@ span {
 
 body {
     display: flex;
+    margin: 0;
     align-items: center;
     justify-content: center;
     text-align: center;
     /* font-family: 'Lato', sans-serif; */
-
 }
 
 .img {
@@ -195,8 +194,8 @@ body {
 }
 
 .blur::backdrop {
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.493);
+    backdrop-filter: blur(5px);
 }
 
 .form {
@@ -217,7 +216,6 @@ body {
     border-radius: 5px;
     /* z-index: 3; */
     font-family: 'Lato', sans-serif;
-
 }
 
 
@@ -226,19 +224,19 @@ body {
 .xBtn {
     cursor: pointer;
     /* border: solid green; */
-    padding: 17px 17px 0px 0px;
+    padding: 10px 10px 0px 0px;
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
 }
 
 .hText {
-    /* border: solid red; */
+    border: solid red;
+    width: 100%;
     color: #000000;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0px 0px 10px 5px;
 }
 
 /* .loginform {
@@ -246,14 +244,16 @@ body {
 } */
 
 .form h1 {
-    font-size: 22px;
+    border: solid green;
+    font-size: 17px;
     display: flex;
     font-weight: 400;
     width: 70%;
 }
 
 .form h2 {
-    font-size: 17px;
+    border: solid green;
+    font-size: 13px;
     display: flex;
     font-weight: 300;
     width: 70%;
@@ -262,7 +262,7 @@ body {
 .username {
     width: 70%;
     padding: 10px;
-    margin: 5px;
+    /* margin: 5px; */
     border-radius: 5px;
     border: none;
     height: 40px;
@@ -275,7 +275,7 @@ body {
     color: #ffff;
     width: 70%;
     padding: 10px;
-    margin: 5px;
+    margin-top: 8px;
     border-radius: 5px;
     text-decoration: none;
     border: none;
@@ -293,4 +293,14 @@ body {
 
 .termsText span {
     border-bottom: 1px solid #959598;
+}
+
+
+@media (max-width: 991px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+    }
 }

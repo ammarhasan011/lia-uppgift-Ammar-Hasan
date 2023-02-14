@@ -2,17 +2,25 @@ Ammar Hasan LIA uppgift Sphinxly 2022
 
 Start tid med projectet 22:41 5/2/2023
 
+ användarnamn att testa logga in med.
+    {
+        username: "Ammar",
+    },
+    {
+        username: "Robert"
+    },
+    {
+        username: "Bamse",
+    }
+
 color 
 #afa17e
 
 
 Svårigheter
-1. Jag hade svårt att hitta rätt färgen på knappen och då använde jag mig av ColorZilla.
-2. Det var klurigt att få blur bakom popup formen.
-3. Fonten Bennet banner fanns inte i google fonts så valde något nära vilket är Benne
-
-
-
-Jag hittade aldrig Bennet banner fonten i google fonts,
-
-hade understrck i span men det var bättre med    border-bottom:
+1. Jag hade svårt att arbeta med projecten hela tiden då jag hade en stor uppgift om APIer med node.js och express. Sedan presenterade vi hur vi har tänkt,
+därför tog lia uppgiften mig mer tid än det som behövdes då jag arbetade med den på nätterna innan jag ska lägga mig.
+2. Jag hade svårt att hitta rätt färger på olika element och då använde jag mig av ColorZilla.
+3. Det var klurigt att få blur bakom popup formen.
+4. Fonten Bennet banner fanns inte i google fonts så valde något nära vilket är Benne.
+5. I formen på den lilla texten kändes det finare att ha border-bottom istället för understreck.
