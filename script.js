@@ -91,7 +91,7 @@ function renderSeccessful(){
     let userkey = localStorage.getItem("userName");
 
     console.log(userkey);
-         console.log(username.value);
+        //  console.log(username.value);
     if (username.value != userkey){
           //DU ÄR INLOGGAD SOM
         let loggingIn = document.querySelector(".loggingIn");
