@@ -36,7 +36,7 @@ firstMessage.style.display = "none";
 secondMessage.style.display = "none";
 form.style.display="none";
 
-
+//users 
 let userArray =[
     {
         username: "Ammar",
@@ -48,9 +48,10 @@ let userArray =[
         username: "Bamse",
     }
 ]
-
+// put array in localstorage
 localStorage.setItem("userArray", JSON.stringify(userArray));
 
+//controll value
 function init(){
     if(localStorage.getItem("username")){
         renderSeccessful()
@@ -58,23 +59,24 @@ function init(){
 }
 init()
 
+//popup form 
 function popUp(){
     console.log("popup form")
     form.style.display="block";
     bgimagetext.style.display="none";
 }
 
+//cancel form
 function cancelForm(){
     console.log("cancel form")
     form.style.display="none";
     bgimagetext.style.display="block";
 }
 
+// check the user
 function checkCode(){
     let search= false;
     for (let users of userArray){
-        // console.log(users.username);
-        // console.log(username.value);
      if (users.username == username.value) {
         search=true;
          renderSeccessful();
@@ -91,7 +93,6 @@ function renderSeccessful(){
     let userkey = localStorage.getItem("userName");
 
     console.log(userkey);
-        //  console.log(username.value);
     if (username.value != userkey){
           //DU ÄR INLOGGAD SOM
         let loggingIn = document.querySelector(".loggingIn");
@@ -112,6 +113,7 @@ function renderSeccessful(){
     bgimagetext.style.display="block";
 }
 
+// function for log out
 function logOut(){
     localStorage.removeItem("username");
     form.style.display="none";
