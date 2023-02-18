@@ -163,7 +163,7 @@ body {
 }
 
 .textOne {
-    font-size: 20px;
+    font-size: 1.1rem;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     position: relative;
@@ -171,7 +171,7 @@ body {
 }
 
 .textTwo {
-    font-size: 4.6rem;
+    font-size: 4.1rem;
     font-family: 'Benne', serif;
 }
 
@@ -187,8 +187,8 @@ body {
 
 .form {
     background-color: #e4e4ee;
-    width: 350px;
-    height: 257px;
+    width: 335px;
+    height: 260px;
     display: flex;
     justify-content: space-around;
     color: black;
@@ -274,7 +274,10 @@ body {
 }
 
 
-@media (max-width: 819px) {
+@media (max-width: 767px
+
+    /*819px*/
+) {
     header {
         padding: 10px 20px;
         flex-direction: column;
@@ -308,6 +311,9 @@ body {
 
     .textOne {
         font-size: 15px;
+        position: relative;
+        bottom: -10px;
+
     }
 
     .textTwo {
@@ -315,13 +321,20 @@ body {
     }
 }
 
-@media (min-width: 820px) and (max-width: 919px) {
+@media(max-width: 768px) {
     header {
+        /* display: flex;
+        flex-direction: column; */
         display: flex;
-        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: auto;
+        /* padding: 0; */
     }
 
-    .leftContent {
+}
+
+/* .leftContent {
         width: 400px;
     }
 
